@@ -1,15 +1,10 @@
 import React, { useState } from 'react'
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native'
-import { Bell, LayoutGrid, Search } from 'lucide-react-native';
+import { Image, Pressable, ScrollView, Text, TextInput, View } from 'react-native'
+import { Bell, Bookmark, BookmarkPlus, LayoutGrid, Search } from 'lucide-react-native';
 
 import { Colors } from '@/constants/Colors';
 import { Categories } from '@/data/sampleCategories';
-
-interface Category {
-    id: number;
-    label: string;
-    categoryCode: string;
-}
+import { MusicFestivals } from '@/data/sampleFestivalData';
 
 export default function HomeScreen() {
     const [searchText, setSearchText] = useState<string>('');
@@ -43,7 +38,7 @@ export default function HomeScreen() {
             <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                className="mb-[20px]"
+                className="mb-[10px]"
             >
                 <View className="flex-row gap-2">
                     {Categories.map((category) => (
@@ -51,12 +46,52 @@ export default function HomeScreen() {
                             key={category.id}
                             onPress={() => handlePressCategory(category.categoryCode)}
                         >
-                            <View className={`flex-row items-center rounded-[30px] p-[10px] ${selectedTab === category.categoryCode ? 'bg-primary-300' : 'bg-background-200'}`}>
+                            <View className={`flex-row items-center rounded-[30px] p-[10px] ${selectedTab === category.categoryCode ? 'bg-primary-300' : 'bg-background-200'} mr-[10px]`}>
                                 <Text className='text-white'>
                                     {category.categoryName}
                                 </Text>
                             </View>
                         </Pressable>
+                    ))}
+                </View>
+            </ScrollView>
+            <View className="flex-row items-center mb-[10px] justify-between w-full">
+                <Text className='text-white text-[28px] font-bold'>
+                    Music Festivals
+                </Text>
+                <Pressable 
+                    onPress={() => console.log('See All Music Festivals')}
+                >
+                    <Text className='text-background-100 text-[14px]'>
+                        See All
+                    </Text>
+                </Pressable>
+            </View>
+            <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                className="mb-[20px]"
+            >
+                <View className="flex-row gap-2">
+                    {MusicFestivals.map((festival) => (
+                        <View key={festival.id} className='relative w-[315px] h-[380px] rounded-[30px] overflow-hidden mr-[15px]'>
+                            <Image
+                                source={festival.imageUrl}
+                                className="w-full h-full"
+                                resizeMode="cover"
+                            />
+                            <Pressable 
+                                className="absolute top-4 right-4 bg-background-100 rounded-[14px] w-[50px] h-[50px] items-center justify-center"
+                                onPress={() => console.log('Bookmark pressed')}
+                            >
+                                <BookmarkPlus size={24} color={Colors.fontColor.fontColor100} />
+                            </Pressable>
+                            <View className="absolute bottom-4 left-4 right-4">
+                            <Text className="text-background-100 text-[16px]">{festival.date}</Text>
+                                <Text className="text-white text-[24px] mb-1">{festival.name}</Text>
+                            </View>
+                        </View>
+
                     ))}
                 </View>
             </ScrollView>
