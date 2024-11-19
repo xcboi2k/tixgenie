@@ -8,6 +8,7 @@ import "../global.css";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import HomeScreen from './main';
+import SearchResultsScreen from './main/search-results';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -30,7 +31,8 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <SearchResultsScreen />
     </ThemeProvider>
   );
 }
