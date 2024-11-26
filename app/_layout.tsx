@@ -12,6 +12,8 @@ import SearchResultsScreen from './main/search-results';
 import FeatureScreen from './main/feature';
 import BuyTicketScreen from './main/buy-ticket';
 import PaymentScreen from './main/payment';
+import AddNewCardScreen from './main/add-new-card';
+import PaymentConfirmationScreen from './main/payment-confirmation';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -38,7 +40,9 @@ export default function RootLayout() {
       {/* <SearchResultsScreen /> */}
       {/* <FeatureScreen /> */}
       {/* <BuyTicketScreen /> */}
-      <PaymentScreen />
+      {/* <PaymentScreen /> */}
+      {/* <AddNewCardScreen /> */}
+      <PaymentConfirmationScreen />
     </ThemeProvider>
   );
 }
