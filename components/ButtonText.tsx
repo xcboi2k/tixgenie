@@ -19,7 +19,7 @@ export default function ButtonText({ width='100%', variant = 'filled', onPress, 
                 rounded-[30px]
                 items-center
                 justify-center
-                ${variant === 'filled' ? 'bg-primary-300' : 'border border-white'}
+                ${variant === 'filled' ? 'bg-primary-300' : 'border border-primary-300'}
             `}
         >
             <Text className={`

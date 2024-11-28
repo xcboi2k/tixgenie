@@ -14,6 +14,7 @@ import BuyTicketScreen from './main/buy-ticket';
 import PaymentScreen from './main/payment';
 import AddNewCardScreen from './main/add-new-card';
 import PaymentConfirmationScreen from './main/payment-confirmation';
+import QRCodeScreen from './main/qr-code';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -42,7 +43,8 @@ export default function RootLayout() {
       {/* <BuyTicketScreen /> */}
       {/* <PaymentScreen /> */}
       {/* <AddNewCardScreen /> */}
-      <PaymentConfirmationScreen />
+      {/* <PaymentConfirmationScreen /> */}
+      <QRCodeScreen />
     </ThemeProvider>
   );
 }
