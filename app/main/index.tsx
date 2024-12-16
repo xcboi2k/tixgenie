@@ -87,7 +87,7 @@ export default function HomeScreen() {
                                 <BookmarkPlus size={24} color={Colors.fontColor.fontColor100} />
                             </Pressable>
                             <View className="absolute bottom-4 left-4 right-4">
-                            <Text className="text-background-100 text-[16px]">{festival.date}</Text>
+                                <Text className="text-background-100 text-[16px]">{festival.date}</Text>
                                 <Text className="text-white text-[24px] mb-1">{festival.name}</Text>
                             </View>
                         </View>

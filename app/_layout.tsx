@@ -15,6 +15,8 @@ import PaymentScreen from './main/payment';
 import AddNewCardScreen from './main/add-new-card';
 import PaymentConfirmationScreen from './main/payment-confirmation';
 import QRCodeScreen from './main/qr-code';
+import CollectionScreen from './main/collection';
+import NotificationScreen from './main/notification';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -44,7 +46,9 @@ export default function RootLayout() {
       {/* <PaymentScreen /> */}
       {/* <AddNewCardScreen /> */}
       {/* <PaymentConfirmationScreen /> */}
-      <QRCodeScreen />
+      {/* <QRCodeScreen /> */}
+      {/* <CollectionScreen /> */}
+      <NotificationScreen />
     </ThemeProvider>
   );
 }

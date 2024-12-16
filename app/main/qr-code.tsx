@@ -29,8 +29,8 @@ export default function QRCodeScreen() {
                     {/* Header */}
                     <View className="bg-[#1D1F21] rounded-t-2xl">
                         <Image
-                        source={SampleFestivalImage}
-                        className="h-[321px] w-full rounded-t-2xl"
+                            source={SampleFestivalImage}
+                            className="h-[321px] w-full rounded-t-2xl"
                         />
                     </View>
 
@@ -56,8 +56,8 @@ export default function QRCodeScreen() {
                         {/* QR Code */}
                         <View className="items-center justify-center ml-4">
                             <Image
-                            source={SampleQRCode}
-                            className="h-[100px] w-[100px]"
+                                source={SampleQRCode}
+                                className="h-[100px] w-[100px]"
                             />
                         </View>
                     </View>
