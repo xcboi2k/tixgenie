@@ -44,10 +44,10 @@ export default function NotificationScreen() {
                             </View>
                             <View className='flex flex-col items-center w-[85%] pr-[10px]'>
                                 <View className='flex-row justify-between items-start mb-[10px] w-full'>
-                                    <Text className="text-background-500 text-[16px]">{notifications.notificationTitle}</Text>
+                                    <Text className="text-background-400 text-[16px]">{notifications.notificationTitle}</Text>
                                     <Text className="text-fontColor-300 text-[14px]">{notifications.notificationTime}</Text>
                                 </View>
-                                <Text className="text-background-500 text-[16px] mb-[20px] w-full">{notifications.notificationBody}</Text>
+                                <Text className="text-background-400 text-[16px] mb-[20px] w-full">{notifications.notificationBody}</Text>
                                 {
                                     notifications.isProcess && (
                                         <View className="w-full flex-row items-center justify-between">
@@ -63,8 +63,8 @@ export default function NotificationScreen() {
                                             </Pressable>
                                             <Pressable onPress={() => console.log('Not now')}
                                             >
-                                                <View className={`items-center rounded-[8px] p-[10px] w-[130px] h-[40px] border-[1px] border-background-500`}>
-                                                    <Text className="text-background-500 text-[14px]">Not Now</Text>
+                                                <View className={`items-center rounded-[8px] p-[10px] w-[130px] h-[40px] border-[1px] border-background-400`}>
+                                                    <Text className="text-background-400 text-[14px]">Not Now</Text>
                                                 </View>
                                             </Pressable>
                                         </View>

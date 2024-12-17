@@ -44,12 +44,12 @@ export default function CollectionScreen() {
                             </View>
                             <View className='flex-row justify-between items-center mb-[10px] w-full'>
                                 <View className="flex flex-col">
-                                    <Text className="text-background-500 text-[14px] mb-[5px] font-bold">{collection.ticketStartTime}</Text>
+                                    <Text className="text-background-400 text-[14px] mb-[5px] font-bold">{collection.ticketStartTime}</Text>
                                     <Text className="text-[#808C95] text-[14px]">{collection.ticketDate}</Text>
                                 </View>
                                 <Text className="text-accent-300 text-[14px]">Non stop</Text>
                                 <View className="flex flex-col items-end">
-                                    <Text className="text-background-500 text-[14px] mb-[5px] font-bold">{collection.ticketEndTime}</Text>
+                                    <Text className="text-background-400 text-[14px] mb-[5px] font-bold">{collection.ticketEndTime}</Text>
                                     <Text className="text-[#808C95] text-[14px]">{collection.ticketDate}</Text>
                                 </View>
                             </View>
