@@ -7,7 +7,7 @@ import 'react-native-reanimated';
 import "../global.css";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import HomeScreen from './main';
+import HomeScreen from './(tabs)';
 import SearchResultsScreen from './main/search-results';
 import FeatureScreen from './main/feature';
 import BuyTicketScreen from './main/buy-ticket';
