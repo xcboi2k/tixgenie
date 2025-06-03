@@ -9,7 +9,7 @@ export default function TabLayout() {
             screenOptions={{ headerShown: false }}
         >
             <Tabs.Screen
-                name="index"
+                name="dashboard"
                 options={{
                 title: "Dashboard",
                 tabBarIcon: ({ color }) => <Home size={24} color={color} />,

@@ -7,17 +7,17 @@ import 'react-native-reanimated';
 import "../global.css";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import HomeScreen from './(tabs)';
-import SearchResultsScreen from './main/search-results';
-import FeatureScreen from './main/feature';
-import BuyTicketScreen from './main/buy-ticket';
-import PaymentScreen from './main/payment';
-import AddNewCardScreen from './main/add-new-card';
-import PaymentConfirmationScreen from './main/payment-confirmation';
-import QRCodeScreen from './main/qr-code';
-import CollectionScreen from './main/collection';
-import NotificationScreen from './main/notification';
-import BookmarkScreen from './main/bookmark';
+import HomeScreen from './(tabs)/dashboard';
+import SearchResultsScreen from './(tabs)/dashboard/search-results';
+import FeatureScreen from './(tabs)/dashboard/feature';
+import BuyTicketScreen from './(tabs)/dashboard/buy-ticket';
+import PaymentScreen from './(tabs)/dashboard/payment';
+import AddNewCardScreen from './(tabs)/dashboard/add-new-card';
+import PaymentConfirmationScreen from './(tabs)/dashboard/payment-confirmation';
+import QRCodeScreen from './(tabs)/dashboard/qr-code';
+import CollectionScreen from './(tabs)/collections';
+import NotificationScreen from './(tabs)/notifications';
+import BookmarkScreen from './(tabs)/bookmarks';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
